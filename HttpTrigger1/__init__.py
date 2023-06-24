@@ -19,7 +19,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         else:   
             order = req_body.get('order')
             ticker = req_body.get('ticker')
-    
+    #Work, just connect to Binance API
     if order == "buy" : 
         if not Ibuy :
             logging.info('Je dois acheter') 
